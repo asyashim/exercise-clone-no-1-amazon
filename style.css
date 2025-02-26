@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background: rgb(245, 220, 224);
+}
+
+.top-nav {
+    height: 60px;
+    background-color: #05090e;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.nav-logo {
+    width: 110px;
+    padding-top: 12px;
+    margin-left: 15px;
+}
+
+.nav-logo img {
+    width: 100%;
+
+
+}
+
+.border {
+    border: 1px solid transparent;
+}
+
+.border:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.location-icon {
+    display: flex;
+}
+
+.location-first {
+    margin-left: 12px;
+    font-size: 1vw;
+    font-family: amazon-ember;
+    color: white;
+}
+
+.location-second {
+
+    font-size: 1.1vw;
+    color: white;
+    font-weight: 700;
+
+}
+
+.location-icon i {
+    font size: 1.2vw;
+    margin-right: 3px;
+    padding-left: 12px;
+}
+
+/*.............search Box........*/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 600px;
+
+    border: 0;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+
+}
+
+.nav-search:hover {
+    border: 2px solid rgb(247, 124, 24);
+}
+
+.category {
+    width: 52px;
+    text-align: center;
+    font-size: 1vw;
+    border: 0;
+    outline: none;
+    background-color: #ece6e6;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.search-input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 1.2vw;
+    padding-left: 5px;
+}
+
+.search-icon {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 1.5vw;
+    background-color: rgb(235, 182, 84);
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+/*.............Language Box.................*/
+.nav-laguage {
+    width: auto;
+}
+
+.lang-select {
+
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: white;
+    width: 42px;
+    text-align: center;
+    font-weight: 660;
+    font-size: 1vw;
+
+}
+
+.lang-select img {
+    width: 20px;
+
+}
+
+/*..........sign in box................*/
+.nav-signin {
+    padding: 0 9px;
+}
+
+.first-signin {
+    color: #ccc;
+    font-size: 0.9vw;
+
+}
+
+.second-signin {
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+/*..............Cart Box...........*/
+.nav-cart {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-cart i {
+    font-size: 2.2vw;
+    margin-right: 3px;
+}
+
+.nav-cart p {
+    font-size: 1vw;
+    font-weight: 700;
+}
+/*......Bottom Navbar........*/
+.bottom-nav{
+    background-color: #232f3e;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 20px;
+    width: 100%;
+    position: relative;
+    top:60px;
+
+}
+.bnav-left{
+    display: flex;
+    align items: center;
+}
+.options{
+    display: flex;
+}
+
+.bnav-left .all {
+    display: flex;
+    align-items: center;
+
+}.bnav-left .all i{
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.bnav-left .options a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    margin:0 8px ;
+
+}
+/*...............Hero Section............*/
+.hero-section{
+    background-image: url(amazon1.jpg);
+    height: 400px;
+    background-size: cover;
+    margin top: 60px;
+    
+
+}
+.spcl-bar{
+    background-color: wheat;
+    padding: 6px 20px;
+    text-align: center;
+    font-size: 20;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+.spcl-bar a{
+    text-decoration: none;
+}
+.spcl-bar a:hover{
+    text-decoration: underline;
+}
+/*.......Products....*/
+.products-box{
+    width: 96%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 20px;
+}
+.box{
+    background: white;
+    height: auto;
+    padding: 20px;
+
+}
+.box img{
+    width: 100%;
+    height: 80%;
+}
+h3{
+    margin-bottom: 20px;
+
+}
+.box a{
+    text-decoration: none;
+    font-size: 1vw;
+    margin-top: 20px;
+    color: #000;
+}
+/*................scroll Product Section...................*/
+.scroll-product{
+    width: 96%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px ;
+}
+.scroll-product .products{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: auto;
+}
+.products::webkit-scrollbar{
+    height: 8px;
+    cursor: pointer;
+    background: grey;
+}
+
+.products::webkit-scrollbar-track{
+  border-radius: 10px;
+}
+.products::webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: white;
+}
+.products::webkit-scrollbar-thumb:hover{
+    
+    background: #2e2d2d;
+}
+.products img{
+    width: 200px;
+    margin: 0 16px;
+    margin-bottom: 20px;
+
+
+}/*........signin-section.........*/
+.signin-section{
+    width: 100%;
+    background: white;
+    margin: 20px 0;
+    padding: 30px 0;
+}
+.signin-section .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(197, 192, 192);
+    padding:30px 0 ;
+}
+.signin-section .content p{
+    font-size: 1vw;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.signin-section .content a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: rgba(36, 36, 192, 0.589);
+}
+.signin-section .content button{
+    font-size: 1vw;
+   padding: 12px 40px;
+   background: rgb(218, 145, 10);
+   border: 0;
+   outline: none;
+   border-radius: 4px;
+   width: 400px;
+}
+/*.......Foooter Section......*/
+.footer{
+    width: 100%;
+    background: #131414;
+    color: white;
+}
+.footer .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 70px;
+    flex: wrap;
+}
+.footer .row .col{
+    padding: 20px;
+
+}
+.footer .row .col ul li {
+    list-style: none;
+}
+.footer .row .col ul li a{
+font-size: 1vw;
+line-height:30px ;
+color: #ccc;
+}
+.footer .row .col ul li a:hover{
+    text-decoration: underline;
+    }
+.col-heading{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.2vw;
+}
+.bottom-footer{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.footer-logo img{
+    width: 110px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    margi : 30px 0;
+}
+.country{
+    margin-bottom: 20px;
+}
+.country ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.country ul li{
+   list-style: none;
+   margin: 5px 10px;
+   font-size: 1vw;
+}
+.footer-logo button{
+    padding: 8px 20px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #fff;
+    
+}
+hr{
+    border: 0.5px solid #2e2e2c;
+}
+
